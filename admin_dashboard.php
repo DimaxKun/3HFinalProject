@@ -320,7 +320,6 @@ if (isset($_POST['add_availability'])) {
         </form>
     </div>
 
-    <!-- Payments Table -->
     <div class="section">
         <h2>Payments</h2>
         <table>

@@ -130,7 +130,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             background-color: #0056b3;
         }
 
-        /* Summary Section */
         .summary {
             background-color: #f9f9f9;
             padding: 20px;
