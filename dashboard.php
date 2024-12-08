@@ -85,8 +85,8 @@
         <h2>Ready to Relax?</h2>
         <p>Join us and experience the best in wellness and relaxation.</p>
         <a href="register.php" class="cta-button">Create an Account</a>
-        <a href="booking.php" class="cta-button secondary">Schedule Now</a>
-        <a href="login.php" class="cta-button">Log-in</a>
+        <a href="appointments.php" class="cta-button secondary">Schedule Now</a>
+        <!-- <a href="login.php" class="cta-button">Log-in</a> -->
     </section>
 
     <footer>

@@ -7,19 +7,19 @@ $db_name = "booking_system";
 // Connect to the database server
 $conn = new mysqli($host, $username, $password);
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-echo "Connected successfully to the server.<br><br>";
+// // Check connection
+// if ($conn->connect_error) {
+//     die("Connection failed: " . $conn->connect_error);
+// }
+// echo "Connected successfully to the server.<br><br>";
 
-// Create the database
-$sql = "CREATE DATABASE IF NOT EXISTS $db_name";
-if ($conn->query($sql) === TRUE) {
-    echo "Database '$db_name' created successfully.<br><br>";
-} else {
-    die("Error creating database: " . $conn->error);
-}
+// // Create the database
+// $sql = "CREATE DATABASE IF NOT EXISTS $db_name";
+// if ($conn->query($sql) === TRUE) {
+//     echo "Database '$db_name' created successfully.<br><br>";
+// } else {
+//     die("Error creating database: " . $conn->error);
+// }
 
 // Select the database
 $conn->select_db($db_name);
@@ -111,16 +111,16 @@ $tables = [
     )"
 ];
 
-// Execute table creation queries
-foreach ($tables as $table_sql) {
-    if ($conn->query($table_sql) === TRUE) {
-        echo "Table created successfully.<br>";
-    } else {
-        echo "Error creating table: " . $conn->error . "<br>";
-    }
-}
+// // Execute table creation queries
+// foreach ($tables as $table_sql) {
+//     if ($conn->query($table_sql) === TRUE) {
+//         echo "Table created successfully.<br>";
+//     } else {
+//         echo "Error creating table: " . $conn->error . "<br>";
+//     }
+// }
 
-// Close the connection
-$conn->close();
-echo "<br>Setup completed successfully.";
+// // Close the connection
+// $conn->close();
+// echo "<br>Setup completed successfully.";
 ?>

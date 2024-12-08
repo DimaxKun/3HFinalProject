@@ -1,10 +1,54 @@
+<?php
+include 'db.php'; // Include database connection
+
+// Default SQL query
+$sql = "SELECT * FROM Services";
+
+// Filter and sorting logic
+$filters = [];
+$orderBy = "";
+
+// Handle filters
+if (isset($_GET['price_range']) && !empty($_GET['price_range'])) {
+    $priceRange = explode("-", $_GET['price_range']);
+    $filters[] = "price BETWEEN {$priceRange[0]} AND {$priceRange[1]}";
+}
+if (isset($_GET['duration']) && !empty($_GET['duration'])) {
+    $filters[] = "duration = {$_GET['duration']}";
+}
+if (isset($_GET['service_type']) && !empty($_GET['service_type'])) {
+    $filters[] = "service_name LIKE '%" . $conn->real_escape_string($_GET['service_type']) . "%'";
+}
+
+// Handle sorting
+if (isset($_GET['sort_by']) && !empty($_GET['sort_by'])) {
+    $sortBy = $_GET['sort_by'];
+    if ($sortBy === "price") {
+        $orderBy = "ORDER BY price ASC";
+    } elseif ($sortBy === "duration") {
+        $orderBy = "ORDER BY duration ASC";
+    } elseif ($sortBy === "popularity") {
+        $orderBy = "ORDER BY created_at DESC"; // Assuming popularity is based on recency
+    }
+}
+
+// Combine filters into SQL query
+if (!empty($filters)) {
+    $sql .= " WHERE " . implode(" AND ", $filters);
+}
+$sql .= " $orderBy";
+
+// Execute query
+$result = $conn->query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Home - Wellness Booking System</title>
+    <title>Our Services - Wellness Booking System</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -41,7 +85,7 @@
         }
 
         .cta-buttons a:hover {
-            background-color: ##004d40;
+            background-color: #0056b3;
         }
 
         .services {
@@ -90,37 +134,48 @@
             margin: 5px 0;
         }
 
-        .testimonials {
-            padding: 40px 20px;
-            background-color: #ffffff;
+        .service-card a {
+            text-decoration: none;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 10px;
+            display: inline-block;
+            border-radius: 5px;
         }
 
-        .testimonials h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 20px;
+        .service-card a:hover {
+            background-color: #0056b3;
         }
 
-        .testimonial-slider {
+        .filter-bar {
+            padding: 20px;
+            background-color: #f4f4f9;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             display: flex;
-            overflow-x: auto;
-            gap: 20px;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
 
-        .testimonial-card {
-            min-width: 300px;
+        .filter-bar select, .filter-bar button {
+            padding: 10px;
+            margin: 5px;
             border: 1px solid #ddd;
             border-radius: 5px;
-            padding: 15px;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
         }
 
-        .cta-section {
-            padding: 40px 20px;
-            background-color: #004d40;
+        .filter-bar button {
+            background-color: #007BFF;
             color: white;
-            text-align: center;
+            border: none;
+            cursor: pointer;
         }
+
+        .filter-bar button:hover {
+            background-color: #0056b3;
+        }
+
 
         .cta-section a {
         text-decoration: none;
@@ -129,83 +184,67 @@
         padding: 15px 30px;
         border-radius: 5px;
         font-size: 1.2rem;
-}
+        }
     </style>
 </head>
 <body>
 
-<header class="hero">
-        <div class="hero-content">
-            <h1>OUR SERVICES</h1>
-    </header>
-<section class="services">
-<div class="services-grid">
-            <div class="service-card">
-                <img src="images/massages.webp" alt="Massage Therapy" class="massage-img">
-                <h3>Massage Therapy</h3>
-                <p>Relax your body and mind with our therapeutic massage treatments.</p>
-                <p>DURATION: 30mins</p>
-                <p><strong>₱2,900</strong></p>
-                <a href="booking.php" class="book-now-button">Book Now</a>
-            </div>
-            <div class="service-card">
-                <img src="images/yoga.webp" alt="Facial Treatments" class="facial-img">
-                <h3>Facial Treatments</h3>
-                <p>Rejuvenate your skin with our personalized facial care services.</p>
-                <p>DURATION: 30mins</p>
-                <p><strong>₱4,100</strong></p>
-                <a href="booking.php" class="book-now-button">Book Now</a>
-            </div>
-            <div class="service-card">
-                <img src="images/yoga.webp" alt="Yoga Sessions" class="yoga-img">
-                <h3>Yoga Sessions</h3>
-                <p>Connect with your inner self through relaxing yoga sessions.</p>
-                <p>DURATION: 30mins</p>
-                <p><strong>₱1,700</strong></p>
-                <a href="booking.php" class="book-now-button">Book Now</a>
-            </div>
-        </div>
-</section>
-<section class="services">
-<div class="services-grid">
-            <div class="service-card">
-                <img src="images/head.webp" alt="Massage Therapy" class="massage-img">
-                <h3>Head Massage</h3>
-                <p>Relax your body and mind with our therapeutic massage treatments.</p>
-                <p>DURATION: 30mins</p>
-                <p><strong>₱2,900</strong></p>
-                <a href="booking.php" class="book-now-button">Book Now</a>
-            </div>
-            <div class="service-card">
-                <img src="images/chair.webp" alt="Facial Treatments" class="facial-img">
-                <h3>Chair Massage</h3>
-                <p>Rejuvenate your skin with our personalized facial care services.</p>
-                <p>DURATION: 20mins</p>
-                <p><strong>₱100</strong></p>
-                <a href="booking.php" class="book-now-button">Book Now</a>
-            </div>
-            <div class="service-card">
-                <img src="images/hair.webp" alt="Yoga Sessions" class="yoga-img">
-                <h3>Hair Therapy</h3>
-                <p>Connect with your inner self through relaxing yoga sessions.</p>
-                <p>DURATION: 1hr</p>
-                <p><strong>₱1,000</strong></p>
-                <a href="booking.php" class="book-now-button">Book Now</a>
-            </div>
-        </div>
-</section>
+<header>
+    <h1>Our Services</h1>
+</header>
 
-<section class="testimonials">
-    <h2>Recent Reviews</h2>
-    <div class="testimonial-slider">
-        <div class="testimonial-card">
-            <p>“The massage therapy was amazing. I feel so relaxed!”</p>
-            <strong>- Jane Doe</strong>
-        </div>
-        <div class="testimonial-card">
-            <p>“Excellent service and friendly staff. Highly recommend!”</p>
-            <strong>- John Smith</strong>
-        </div>
+<div class="filter-bar">
+    <form method="GET">
+        <select name="service_type">
+            <option value="">All Services</option>
+            <option value="Massage">Massage</option>
+            <option value="Facial">Facial</option>
+            <option value="Yoga">Yoga</option>
+        </select>
+        <select name="price_range">
+            <option value="">Price Range</option>
+            <option value="0-1000">₱0 - ₱1000</option>
+            <option value="1001-3000">₱1001 - ₱3000</option>
+            <option value="3001-5000">₱3001 - ₱5000</option>
+        </select>
+        <select name="duration">
+            <option value="">Duration</option>
+            <option value="30">30 minutes</option>
+            <option value="60">1 hour</option>
+            <option value="120">2 hours</option>
+        </select>
+        <select name="sort_by">
+            <option value="">Sort By</option>
+            <option value="popularity">Popularity</option>
+            <option value="price">Price</option>
+            <option value="duration">Duration</option>
+        </select>
+        <button type="submit">Apply</button>
+    </form>
+</div>
+
+<section class="services">
+    <h2>Explore Our Offerings</h2>
+    <div class="service-grid">
+        <?php
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                ?>
+                <div class="service-card">
+                    <img src="images/<?php echo strtolower(str_replace(' ', '_', $row['service_name'])); ?>.jpg" 
+                         alt="<?php echo htmlspecialchars($row['service_name']); ?>">
+                    <h3><?php echo htmlspecialchars($row['service_name']); ?></h3>
+                    <p><?php echo htmlspecialchars($row['description']); ?></p>
+                    <p class="duration">Duration: <?php echo $row['duration']; ?> mins</p>
+                    <p class="price"><strong>₱<?php echo number_format($row['price'], 2); ?></strong></p>
+                    <a href="booking.php?service_id=<?php echo $row['service_id']; ?>" class="book-now-button">Book Now</a>
+                </div>
+                <?php
+            }
+        } else {
+            echo "<p>No services available at the moment.</p>";
+        }
+        ?>
     </div>
 </section>
 
