@@ -1,0 +1,22 @@
+RewriteEngine On
+RewriteBase /cit17-final-project/public
+
+# If the request is not for a file or directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite all requests to index.php
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+# Set proper MIME types
+AddType text/css .css
+AddType text/javascript .js
+AddType image/jpeg .jpg .jpeg
+AddType image/png .png
+AddType image/gif .gif
+
+# Allow access to assets
+<FilesMatch "\.(css|js|jpg|jpeg|png|gif|ico)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch> 
