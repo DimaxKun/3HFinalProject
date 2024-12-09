@@ -38,23 +38,22 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card service-card h-100 <?php echo ($selectedService && $selectedService['service_id'] == $service['service_id']) ? 'selected' : ''; ?>"
                          data-service-id="<?php echo $service['service_id']; ?>">
-                        <div class="service-image p-4 text-center bg-light rounded-top">
+                        <div class="service-image p-4 text-center bg-light rounded-top" >
                             <?php
                             $icon = match($service['service_type']) {
-                                'massage' => 'bi-hand-index-thumb',
-                                'facial' => 'bi-stars',
-                                'body' => 'bi-heart-pulse',
-                                default => 'bi-spa'
+                                'massage' => 'bi-card-image',
+                                'facial' => 'bi-card-image',
+                                'body' => 'bi-card-image',
+                                default => 'bi-card-image'
                             };
                             ?>
                             <i class="bi <?php echo $icon; ?> display-4 text-primary"></i>
                             <?php if ($service['is_popular']): ?>
-                            <span class="position-absolute top-0 end-0 m-3">
-                                <span class="badge bg-primary">Popular</span>
+                            
                             </span>
                             <?php endif; ?>
                         </div>
-                        <div class="card-body p-4">
+                        <div class="card-body p-4"style ="background-color:#00d1a4">
                             <div class="d-flex justify-content-between align-items-start mb-3">
                                 <h5 class="card-title mb-0">
                                     <?php echo htmlspecialchars($service['service_name']); ?>
@@ -79,8 +78,8 @@
                                 <?php echo htmlspecialchars($service['description']); ?>
                             </p>
                         </div>
-                        <div class="card-footer bg-transparent border-0 p-4 pt-0">
-                            <button class="btn <?php echo ($selectedService && $selectedService['service_id'] == $service['service_id']) ? 'btn-primary' : 'btn-outline-primary'; ?> w-100 rounded-pill select-service"
+                        <div style ="background-color:#00d1a4";class="card-footer bg-transparent border-0 p-4 pt-0" >
+                            <button  class="btn <?php echo ($selectedService && $selectedService['service_id'] == $service['service_id']) ? 'btn-primary' : 'btn-outline-primary'; ?> w-100 select-service"
                                     data-service-id="<?php echo $service['service_id']; ?>">
                                 <?php if ($selectedService && $selectedService['service_id'] == $service['service_id']): ?>
                                 <i class="bi bi-check-circle me-2"></i>Selected
@@ -168,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .step.active .step-icon i {
-    color: var(--bs-primary);
+    color: var(--primary-dark);
 }
 
 .step-label {
@@ -179,7 +178,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .step.active .step-label {
-    color: var(--bs-primary);
+    color: var(--primary-dark);
     font-weight: 500;
 }
 
@@ -196,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .service-card.selected {
-    border-color: var(--bs-primary);
+    border-color: var(--primary-dark);
     box-shadow: 0 5px 15px rgba(13, 110, 253, 0.15);
 }
 

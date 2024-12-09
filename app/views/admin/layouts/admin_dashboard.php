@@ -11,46 +11,46 @@
     <!-- Custom CSS -->
     <link href="<?php echo BASE_URL; ?>/public/assets/css/admin.css" rel="stylesheet">
 </head>
-<body class="bg-light">
+<body style="background-color: #AFFFEA">
     <div class="wrapper">
         <!-- Sidebar -->
         <nav id="sidebar" class="shadow-sm">
             <div class="sidebar-header p-4">
                 <div class="d-flex align-items-center">
-                    <i class="bi bi-heart-pulse-fill text-primary fs-4 me-2"></i>
-                    <h3 class="mb-0">Admin Panel</h3>
+                    
+                    <h3 class="mb-0">Admin Dashboard</h3>
                 </div>
             </div>
 
             <ul class="list-unstyled components p-3">
                 <li class="mb-2 <?php echo $active_page === 'dashboard' ? 'active' : ''; ?>">
                     <a href="<?php echo BASE_URL; ?>/public/admin" class="d-flex align-items-center p-3 rounded">
-                        <i class="bi bi-speedometer2 me-3"></i> Dashboard
+                        <!--<i class="bi bi-speedometer2 me-3"></i> Dashboard -->
                     </a>
                 </li>
                 <li class="<?php echo $active_page === 'bookings' ? 'active' : ''; ?>">
                     <a href="<?php echo BASE_URL; ?>/public/admin/bookings" class="d-flex align-items-center p-3 rounded">
-                        <i class="bi bi-calendar-check me-3"></i> Bookings
+                       <!-- <i class="bi bi-calendar-check me-3"></i> -->Bookings
                     </a>
                 </li>
                 <li class="<?php echo $active_page === 'services' ? 'active' : ''; ?>">
                     <a href="<?php echo BASE_URL; ?>/public/admin/services" class="d-flex align-items-center p-3 rounded">
-                        <i class="bi bi-grid me-3"></i> Services
+                       <!-- <i class="bi bi-grid me-3"></i>--> Services 
                     </a>
                 </li>
                 <li class="<?php echo $active_page === 'therapists' ? 'active' : ''; ?>">
                     <a href="<?php echo BASE_URL; ?>/public/admin/therapists" class="d-flex align-items-center p-3 rounded">
-                        <i class="bi bi-people me-3"></i> Therapists
+                       <!-- <i class="bi bi-people me-3"></i>--> Therapists 
                     </a>
                 </li>
                 <li class="<?php echo $active_page === 'payments' ? 'active' : ''; ?>">
                     <a href="<?php echo BASE_URL; ?>/public/admin/payments" class="d-flex align-items-center p-3 rounded">
-                        <i class="bi bi-credit-card me-3"></i> Payments
+                      <!--  <i class="bi bi-credit-card me-3"></i> -->Payments 
                     </a>
                 </li>
                 <li class="<?php echo $active_page === 'reports' ? 'active' : ''; ?>">
                     <a href="<?php echo BASE_URL; ?>/public/admin/reports" class="d-flex align-items-center p-3 rounded">
-                        <i class="bi bi-graph-up me-3"></i> Reports
+                       <!-- <i class="bi bi-graph-up me-3"></i>--> Reports 
                     </a>
                 </li>
             </ul>

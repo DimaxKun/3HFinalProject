@@ -20,7 +20,11 @@ if (isset($_SESSION['error'])): ?>
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     </div>
 <?php endif; ?>
-
+<style>
+        .card-body.p-4 {
+            background-color: #AEEEEE;
+        }
+    </style>
 <div class="container-fluid">
     <div class="row">
         <!-- Left Column: Personal Information & Password -->
@@ -30,7 +34,7 @@ if (isset($_SESSION['error'])): ?>
                 <div class="card-body p-4">
                     <div class="d-flex justify-content-between align-items-center mb-4">
                         <h5 class="card-title mb-0">Personal Information</h5>
-                        <span class="badge bg-primary-subtle text-primary px-3 py-2">Customer Profile</span>
+                        
                     </div>
                     
                     <form id="profile-form" action="<?php echo BASE_URL; ?>/public/dashboard/profile/update" method="POST" class="needs-validation" novalidate>
@@ -57,7 +61,7 @@ if (isset($_SESSION['error'])): ?>
                         </div>
                         <div class="mt-4">
                             <button type="submit" class="btn btn-primary">
-                                <i class="bi bi-check-circle me-2"></i>Save Changes
+                                </i>Save Changes
                             </button>
                         </div>
                     </form>
@@ -69,7 +73,7 @@ if (isset($_SESSION['error'])): ?>
                 <div class="card-body p-4">
                     <div class="d-flex justify-content-between align-items-center mb-4">
                         <h5 class="card-title mb-0">Change Password</h5>
-                        <span class="badge bg-warning-subtle text-warning px-3 py-2">Security Settings</span>
+                        
                     </div>
                     
                     <form id="password-form" action="<?php echo BASE_URL; ?>/public/dashboard/profile/password" method="POST">
@@ -115,8 +119,8 @@ if (isset($_SESSION['error'])): ?>
                             </div>
                         </div>
                         <div class="mt-4">
-                            <button type="submit" class="btn btn-warning" disabled>
-                                <i class="bi bi-shield-lock me-2"></i>Update Password
+                            <button type="submit" class="btn btn-warning" disabled style="background-color:blue; color:white">
+                                </i>Update Password
                             </button>
                         </div>
                     </form>
@@ -156,32 +160,7 @@ if (isset($_SESSION['error'])): ?>
                 </div>
             </div>
 
-            <!-- Account Security Card -->
-            <div class="card border-0 shadow-sm">
-                <div class="card-body p-4">
-                    <h5 class="card-title mb-4">Account Security</h5>
-                    <div class="security-items">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="security-icon bg-success-subtle text-success rounded-circle me-3">
-                                <i class="bi bi-shield-check"></i>
-                            </div>
-                            <div>
-                                <h6 class="mb-1">Two-Factor Authentication</h6>
-                                <p class="text-muted mb-0">Not enabled</p>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <div class="security-icon bg-info-subtle text-info rounded-circle me-3">
-                                <i class="bi bi-clock-history"></i>
-                            </div>
-                            <div>
-                                <h6 class="mb-1">Last Password Change</h6>
-                                <p class="text-muted mb-0"><?php echo date('F d, Y', strtotime($user['updated_at'])); ?></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 </div>

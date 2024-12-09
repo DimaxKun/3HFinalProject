@@ -1,4 +1,9 @@
 <div class="container-fluid">
+<style>
+        .card-body.p-4 {
+            background-color: #AEEEEE;
+        }
+    </style>
     <!-- Page Header -->
     <div class="row mb-4">
         <div class="col-12">
@@ -30,7 +35,7 @@
                         <div class="row g-4">
                             <?php foreach ($promotions as $promo): ?>
                                 <div class="col-lg-6">
-                                    <div class="promo-card bg-light rounded p-4">
+                                    <div class="promo-card bg-light rounded p-4"style="background-color:#AFFFEA">
                                         <div class="ribbon-wrapper">
                                             <div class="ribbon bg-primary">
                                                 <?php echo htmlspecialchars($promo['discount_percent']); ?>% OFF

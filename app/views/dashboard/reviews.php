@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid"style="background-color:#AFFFEA">
     <!-- Page Header -->
     <div class="row mb-4">
         <div class="col-12">

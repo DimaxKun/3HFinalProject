@@ -1,4 +1,4 @@
-    </div>
+   </div>
     <!-- Footer -->
     <footer class="footer py-5">
         <div class="container">
@@ -6,21 +6,21 @@
                 <!-- Brand Column -->
                 <div class="col-lg-4 mb-4 mb-lg-0">
                     <a class="footer-brand d-flex align-items-center mb-3" href="<?php echo BASE_URL; ?>/public">
-                        <i class="bi bi-heart-pulse-fill text-primary me-2 brand-icon"></i>
+                        <!--<i class="bi bi-heart-pulse-fill text-primary me-2 brand-icon"></i> -->
                         <span class="fs-4 fw-semibold">HavenBliss</span>
                     </a>
                     <p class="text-muted mb-4">Serenity Redefined</p>
-                    <div class="social-links">
+                    <!--<div class="social-links">
                         <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="me-3"><i class="bi bi-instagram"></i></a>
                         <a href="#" class="me-3"><i class="bi bi-twitter-x"></i></a>
                         <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                </div>
+                    </div> -->
+                </div> 
 
                 <!-- Quick Links -->
                 <div class="col-sm-6 col-lg-2 mb-4 mb-lg-0">
-                    <h5 class="mb-4">Quick Links</h5>
+                    <h5 class="mb-4">Links</h5>
                     <ul class="list-unstyled">
                         <li class="mb-3"><a href="<?php echo BASE_URL; ?>/public/about">About Us</a></li>
                         <li class="mb-3"><a href="<?php echo BASE_URL; ?>/public/services">Services</a></li>
@@ -30,18 +30,18 @@
                 </div>
 
                 <!-- Services -->
-                <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                    <h5 class="mb-4">Our Services</h5>
+                <!--<div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                    <h5 class="mb-4">Services</h5>
                     <ul class="list-unstyled">
                         <li class="mb-3"><a href="<?php echo BASE_URL; ?>/public/services#massage">Massage Therapy</a></li>
                         <li class="mb-3"><a href="<?php echo BASE_URL; ?>/public/services#facial">Facial Treatments</a></li>
                         <li class="mb-3"><a href="<?php echo BASE_URL; ?>/public/services#yoga">Yoga Classes</a></li>
                         <li><a href="<?php echo BASE_URL; ?>/public/services#meditation">Meditation Sessions</a></li>
                     </ul>
-                </div>
+                </div> -->
 
                 <!-- Newsletter -->
-                <div class="col-lg-3">
+                <!--<div class="col-lg-3">
                     <h5 class="mb-4">Newsletter</h5>
                     <p class="text-muted mb-4">Subscribe to receive updates and special offers.</p>
                     <form class="newsletter-form">
@@ -53,7 +53,7 @@
                         </div>
                     </form>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Bottom Footer -->
             <div class="footer-bottom">
@@ -82,7 +82,7 @@
             duration: 800,
             once: true
         });
-    </script>
+    </script> 
 
     <style>
         .footer {

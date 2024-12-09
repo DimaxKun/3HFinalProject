@@ -15,38 +15,38 @@
 <body>
     <div class="dashboard-wrapper">
         <!-- Sidebar -->
-        <nav id="sidebar" class="sidebar">
+        <nav id="sidebar" class="sidebar" >
             <div class="sidebar-header">
                 <a href="<?php echo BASE_URL; ?>/public" class="d-flex align-items-center text-decoration-none">
-                    <i class="bi bi-heart-pulse-fill text-primary me-2"></i>
-                    <span class="fs-5">SereneBook™</span>
+                    
+                    <span  style="color: white;">Haven Bliss</span>
                 </a>
             </div>
 
-            <ul class="list-unstyled components">
+            <ul class="list-unstyled components" >
                 <li class="<?php echo $active_page === 'overview' ? 'active' : ''; ?>">
-                    <a href="<?php echo BASE_URL; ?>/public/dashboard">
-                        <i class="bi bi-speedometer2 me-2"></i> Overview
+                    <a href="<?php echo BASE_URL; ?>/public/dashboard" style="color:white;">
+                        Overview
                     </a>
                 </li>
                 <li class="<?php echo $active_page === 'appointments' ? 'active' : ''; ?>">
                     <a href="<?php echo BASE_URL; ?>/public/dashboard/appointments">
-                        <i class="bi bi-calendar-check me-2"></i> Appointments
+                        Appointments
                     </a>
                 </li>
                 <li class="<?php echo $active_page === 'profile' ? 'active' : ''; ?>">
                     <a href="<?php echo BASE_URL; ?>/public/dashboard/profile">
-                        <i class="bi bi-person me-2"></i> Profile
+                        Profile
                     </a>
                 </li>
                 <li class="<?php echo $active_page === 'reviews' ? 'active' : ''; ?>">
                     <a href="<?php echo BASE_URL; ?>/public/dashboard/reviews">
-                        <i class="bi bi-star me-2"></i> Reviews
+                         Reviews
                     </a>
                 </li>
                 <li class="<?php echo $active_page === 'promotions' ? 'active' : ''; ?>">
                     <a href="<?php echo BASE_URL; ?>/public/dashboard/promotions">
-                        <i class="bi bi-gift me-2"></i> Promotions
+                         Promotions
                     </a>
                 </li>
             </ul>

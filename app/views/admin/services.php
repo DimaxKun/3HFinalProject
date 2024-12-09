@@ -2,7 +2,7 @@
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h1 class="h3">Manage Services</h1>
         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addServiceModal">
-            <i class="bi bi-plus-circle me-2"></i>Add Service
+            Add Service
         </button>
     </div>
     

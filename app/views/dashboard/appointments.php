@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid"style="background-color:#AFFFEA">
     <!-- Page Header -->
     <div class="row mb-4">
         <div class="col-12">
@@ -8,7 +8,7 @@
                     <p class="text-muted mb-0">Manage all your wellness appointments</p>
                 </div>
                 <a href="<?php echo BASE_URL; ?>/public/booking" class="btn btn-primary">
-                    <i class="bi bi-plus-circle me-2"></i>Book New Appointment
+                    Book New Appointment
                 </a>
             </div>
         </div>

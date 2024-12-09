@@ -1,13 +1,17 @@
-<div class="container-fluid">
+<div class="container-fluid"> 
+<style>
+        .card-body.p-4 {
+            background-color: #AEEEEE;
+        }
+    </style>
     <!-- Welcome Section -->
-    <div class="row mb-4">
+    <div class="row mb-4"  >
         <div class="col-12">
             <div class="card border-0 shadow-sm">
                 <div class="card-body p-4">
                     <h4 class="card-title mb-3">Welcome back, <?php echo htmlspecialchars($_SESSION['full_name']); ?>!</h4>
-                    <p class="card-text text-muted">Manage your appointments and wellness journey from your personal dashboard.</p>
                     <a href="<?php echo BASE_URL; ?>/public/booking" class="btn btn-primary">
-                        <i class="bi bi-calendar-plus me-2"></i>Book New Appointment
+                        </i>Book New Appointment
                     </a>
                 </div>
             </div>
@@ -101,7 +105,7 @@
                     <div class="text-center py-4">
                         <i class="bi bi-calendar-x display-4 text-muted mb-3"></i>
                         <p class="text-muted">No upcoming appointments</p>
-                        <a href="<?php echo BASE_URL; ?>/public/booking" class="btn btn-primary">
+                        <a href="<?php echo BASE_URL; ?>/public/booking" class="btn btn-primary" >
                             Book Now
                         </a>
                     </div>

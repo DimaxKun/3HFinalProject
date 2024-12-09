@@ -29,6 +29,7 @@
             box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
             transition: all 0.3s ease;
             padding: 1rem 0;
+            
         }
 
         .navbar.scrolled {
@@ -39,20 +40,15 @@
             font-weight: 600;
             font-size: 1.4rem;
             transition: transform 0.3s ease;
+            
         }
 
         .navbar-brand:hover {
             transform: translateY(-2px);
         }
 
-        .brand-icon {
-            font-size: 1.5rem;
-            transition: transform 0.3s ease;
-        }
 
-        .navbar-brand:hover .brand-icon {
-            transform: scale(1.1);
-        }
+
 
         .nav-link {
             font-weight: 500;
@@ -120,8 +116,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="<?php echo BASE_URL; ?>/public">
-                
+            <a  class="navbar-brand d-flex align-items-center" href="<?php echo BASE_URL; ?>/public" >   
                 Haven Bliss
             </a>
             <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

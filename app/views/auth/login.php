@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="SereneBook - Your Path to Wellness. Book spa and wellness services online.">
-    <title>Login - SereneBook™</title>
+    <title>Haven Bliss</title>
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -30,6 +30,8 @@
             overflow-x: hidden;
             margin: 0;
             padding: 0;
+            align-items: center;
+            
         }
 
         .login-panel {
@@ -125,13 +127,10 @@
         }
 
         .welcome-panel {
-            background: linear-gradient(135deg, 
-                rgba(0, 123, 255, 0.95), 
-                rgba(0, 98, 204, 0.9)), 
-                url('<?php echo BASE_URL; ?>/public/assets/images/spa-bg.jpg');
+            background: #AFFFEA;
             background-size: cover;
             background-position: center;
-            color: white;
+            color: black;
             height: 100vh;
             position: relative;
             display: flex;
@@ -140,6 +139,7 @@
             overflow-y: auto;
             scrollbar-width: thin;
             scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+            
         }
 
         .welcome-panel::-webkit-scrollbar {
@@ -196,13 +196,13 @@
         }
 
         .welcome-header h1 {
-            font-size: 2.5rem;
+            font-size: 4.5rem;
             font-weight: 700;
             margin-bottom: 0.75rem;
         }
 
         .welcome-header p {
-            font-size: 1.1rem;
+            font-size: 2.1rem;
             opacity: 0.9;
         }
 
@@ -345,15 +345,16 @@
             <div class="login-panel">
                 <div class="login-brand">
                     <a href="<?php echo BASE_URL; ?>/public">
-                        <i class="bi bi-heart-pulse-fill me-2"></i>
-                        SereneBook™
+                       
+                        
+                
                     </a>
                 </div>
 
                 <div class="login-form-container">
                     <div class="form-header">
                         <h2>Welcome Back</h2>
-                        <p>Please enter your credentials to continue</p>
+                        
                     </div>
 
                     <?php if (isset($_SESSION['error'])): ?>
@@ -422,31 +423,12 @@
             <div class="welcome-panel">
                 <div class="welcome-content">
                     <div class="welcome-header">
-                        <i class="bi bi-peace display-4 mb-2"></i>
-                        <h1>Your Path to Wellness</h1>
-                        <p>Experience tranquility and rejuvenation with our premium wellness services</p>
+                       
+                        <h1>Haven Bliss</h1>
+                        <p>"Feel Relaxation Like Never Before"</p>
                     </div>
 
-                    <div class="features-grid">
-                        <div class="feature-item">
-                            <i class="bi bi-calendar-check feature-icon"></i>
-                            <h5>Easy Booking</h5>
-                            <p>Schedule appointments in minutes</p>
-                        </div>
-                        <div class="feature-item">
-                            <i class="bi bi-award feature-icon"></i>
-                            <h5>Expert Therapists</h5>
-                            <p>Certified wellness experts</p>
-                        </div>
-                        <div class="feature-item">
-                            <i class="bi bi-heart feature-icon"></i>
-                            <h5>Premium Service</h5>
-                            <p>Tailored wellness treatments</p>
-                        </div>
-                        <div class="feature-item">
-                            <i class="bi bi-shield-check feature-icon"></i>
-                            <h5>Safe & Secure</h5>
-                            <p>Your privacy is our priority</p>
+                    
                         </div>
                     </div>
                 </div>

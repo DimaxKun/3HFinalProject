@@ -1,17 +1,17 @@
 :root {
     /* Primary Colors */
-    --primary-color: #4A90E2;  /* Serene Blue */
-    --secondary-color: #67D5B5;  /* Mint Green */
-    --accent-color: #84B1ED;  /* Light Blue */
+    --primary-color: #00d1a4;  /* Serene Blue */
+    --secondary-color: #53ac92;  /* Mint Green */
+    --accent-color: #ffffff;  /* Light Blue */
 
     /* Neutral Colors */
-    --neutral-dark: #2C3E50;  /* Dark Blue-Gray */
-    --neutral-medium: #7F8C8D;  /* Medium Gray */
+    --neutral-dark: #39e0ca;  /* Dark Blue-Gray */
+    --neutral-medium: #79eef7;  /* Medium Gray */
     --neutral-light: #ECF0F1;  /* Light Gray */
 
     /* Status Colors */
     --success-color: #27AE60;  /* Green */
-    --warning-color: #F1C40F;  /* Yellow */
+    --warning-color: #ff2929;  /* Yellow */
     --error-color: #E74C3C;  /* Red */
     --white: #FFFFFF;
 }

@@ -10,24 +10,24 @@
                         
                        
                     </div>
-                    <h1 class="hero-title mb-4" data-aos="fade-up" data-aos-duration="1000" style="font-size: 3.5rem; color: #FFFFFF;">
-                        Welcome to <span style= color: white; -webkit-background-clip: text;>Haven Bliss</span>
+                    <h1 class="hero-title mb-4"  data-aos-duration="1000" style="font-size: 3.5rem; color: #FFFFFF;">
+                        Welcome to <span style=color: white; -webkit-background-clip: text;>Haven Bliss</span>
                     </h1>
-                    <p class="hero-subtitle mb-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" style="font-size: 1.25rem;">
+                    <p class="hero-subtitle mb-5"  data-aos-delay="100" data-aos-duration="1000" style="font-size: 1.25rem;">
                     "Serenity Redefined"
                     </p>
-                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="hero-buttons"  data-aos-delay="200" data-aos-duration="1000">
                         <a href="<?php echo BASE_URL; ?>/public/booking" 
-                           class="btn btn-glow btn-lg px-5 me-3" 
-                           style="background-color: #84a9ac; color: white; border-radius: 50px;">
-                            <i class="bi bi-calendar-check me-2"></i>Book Now
-                            <span class="btn-blur"></span>
+                           class="btn btn-primary btn-lg px-5 me-3" 
+                           style="background-color: #25bdbdcc; color: white; border-radius: 5px;">
+                            </i>Book Now
+                            
                         </a>
                         <a href="<?php echo BASE_URL; ?>/public/services" 
-                           class="btn btn-glass btn-lg px-5" 
-                           style="background-color: #a8d5e2; color: #354f52; border-radius: 50px;">
+                           class="btn btn-primary btn-lg px-5" 
+                           style="background-color: #25bdbdcc; color: white; border-radius: 5px;">
                             <i class="bi bi-arrow-right-circle me-2"></i>View Services
-                            <span class="btn-shine"></span>
+                            
                         </a>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
     border: 1px solid rgba(255, 255, 255, 0.3);  /* Soft borders */
     font-size: 1rem;  /* Slightly larger font */
     font-weight: 500;
-    animation: float 3s ease-in-out infinite;
+    /*animation: float 3s ease-in-out infinite;*/
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     color: #536e78;  /* Softer text color */
 }
@@ -181,7 +181,7 @@
         transparent
     );
     transform: rotate(45deg);
-    animation: shine 3s infinite;
+    /*animation: shine 3s infinite;*/
 }
 
 .hero-scroll-indicator {
@@ -212,11 +212,11 @@
     left: 50%;
     transform: translateX(-50%);
     border-radius: 2px;
-    animation: scroll 2s infinite;
+    /*animation: scroll 2s infinite;*/
 }
 
 .arrow-wrapper {
-    animation: bounce 2s infinite;
+    /*animation: bounce 2s infinite; */
 }
 
 .arrow {
@@ -303,14 +303,14 @@
 .floating-icons .icon:nth-child(1) {
     top: 10%;
     left: 15%;
-    animation: floatingClose 8s ease-in-out infinite, glowing 2.5s ease-in-out infinite; /* Slower animation */
+    /*animation: floatingClose 8s ease-in-out infinite, glowing 2.5s ease-in-out infinite; /* Slower animation */
     font-size: 2.4rem; /* Slightly larger to stand out more */
 }
 
 .floating-icons .icon:nth-child(2) {
     top: 20%;
     right: 10%;
-    animation: floatingClose 9s ease-in-out infinite, glowing 3s ease-in-out infinite; /* Slower glowing effect */
+    /*animation: floatingClose 9s ease-in-out infinite, glowing 3s ease-in-out infinite; /* Slower glowing effect */
     font-size: 2.1rem;
 }
 
@@ -318,7 +318,7 @@
 .floating-icons .icon:nth-child(3) {
     top: 45%;
     left: 25%;
-    animation: floatingMid 12s ease-in-out infinite;
+    /*animation: floatingMid 12s ease-in-out infinite;*/
     font-size: 1.9rem;
     opacity: 0.15; /* Slightly brighter middle icons */
 }
@@ -326,7 +326,7 @@
 .floating-icons .icon:nth-child(4) {
     top: 35%;
     right: 20%;
-    animation: floatingMid 11s ease-in-out infinite;
+    /*animation: floatingMid 11s ease-in-out infinite; */
     font-size: 1.8rem;
     opacity: 0.15;
 }
@@ -335,12 +335,12 @@
 .floating-icons .icon:nth-child(5) {
     top: 60%;
     left: 20%;
-    animation: floatingFar 15s ease-in-out infinite;
+    /*animation: floatingFar 15s ease-in-out infinite;*/
     font-size: 1.5rem; /* Slightly larger farthest icon */
     opacity: 0.1;
 }
 
- /* Add positions for new icons */
+ /* Add positions for new icons 
 .floating-icons .icon:nth-child(6) { top: 75%; right: 18%; }
 .floating-icons .icon:nth-child(7) { top: 30%; left: 25%; }
 .floating-icons .icon:nth-child(8) { top: 85%; right: 22%; }
@@ -351,7 +351,7 @@
 .floating-icons .icon:nth-child(13) { top: 45%; left: 40%; }
 .floating-icons .icon:nth-child(14) { top: 60%; right: 38%; }
 .floating-icons .icon:nth-child(15) { top: 35%; left: 45%; }
-
+*/
 /* Enhanced Animation Keyframes */
 @keyframes floatingClose {
     0%, 100% {
@@ -404,16 +404,16 @@
     }
 }
 
-    /* Add random animation delays to create more natural movement */
+    /* Add random animation delays to create more natural movement 
     .floating-icons .icon:nth-child(3n) { animation-delay: -2s; }
     .floating-icons .icon:nth-child(3n+1) { animation-delay: -4s; }
-    .floating-icons .icon:nth-child(3n+2) { animation-delay: -6s; }
+    .floating-icons .icon:nth-child(3n+2) { animation-delay: -6s; }*/
 
-    /* Add hover effect on parent container */
+    /* Add hover effect on parent container 
     .hero-section:hover .floating-icons .icon {
         animation-play-state: paused;
         transition: all 0.3s ease;
-    }
+    }*/
 </style>
 
 
@@ -421,7 +421,7 @@
 <!-- Featured Services Section -->
 <section class="services-section py-5 bg-light">
     <div class="container">
-        <div class="section-header text-center mb-5" data-aos="fade-up">
+        <div class="section-header text-center mb-5" >
             </span>
             <h2 class="display-5 fw-bold mb-3">Services Overview</h2>
             <p class="lead text-muted">Discover our range of therapeutic treatments designed for your wellbeing</p>
@@ -434,33 +434,33 @@
                 $categories = [
                     [
                         'type' => 'massage',
-                        'icon' => 'bi-hand-index-thumb',
+                        'icon' => 'bi-card-image',
                         'name' => 'Massage Therapy',
-                        'color' => 'primary'
+                        
                     ],
                     [
                         'type' => 'facial',
-                        'icon' => 'bi-stars',
+                        'icon' => 'bi-card-image',
                         'name' => 'Facial Care',
-                        'color' => 'info'
+                        
                     ],
                     [
                         'type' => 'body',
-                        'icon' => 'bi-droplet',
+                        'icon' => 'bi-card-image',
                         'name' => 'Body Treatments',
-                        'color' => 'success'
+                        
                     ],
                     [
                         'type' => 'aromatherapy',
-                        'icon' => 'bi-flower2',
+                        'icon' => 'bi-card-image',
                         'name' => 'Aromatherapy',
-                        'color' => 'warning'
+                        
                     ]
                 ];
                 
                 foreach ($categories as $category):
                 ?>
-                <div class="col-lg-3 col-md-6" data-aos="fade-up">
+                <div class="col-lg-3 col-md-6" >
                     <div class="category-card text-center p-4 h-100 bg-white rounded-4 shadow-sm hover-lift">
                         <div class="category-icon-wrapper mb-3">
                             <div class="category-icon bg-<?php echo $category['color']; ?>-subtle text-<?php echo $category['color']; ?> rounded-circle">
@@ -489,12 +489,12 @@
             <div class="row g-4">
                 <?php if (!empty($all_services)): ?>
                     <?php foreach (array_slice($all_services, 0, 3) as $service): ?>
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="col-lg-4 col-md-6" >
                         <div class="service-card bg-white rounded-4 p-4 position-relative hover-lift d-flex flex-column h-100">
                             <?php if ($service['is_popular']): ?>
                             <div class="popular-badge position-absolute">
-                                <span class="badge bg-warning text-dark rounded-pill px-3 py-2">
-                                    <i class="bi bi-star-fill me-1"></i>Popular Choice
+                                
+                                    
                                 </span>
                             </div>
                             <?php endif; ?>
@@ -502,10 +502,10 @@
                             <div class="service-icon-wrapper mb-4">
                                 <?php
                                 $iconClass = match($service['service_type']) {
-                                    'massage' => 'bi-hand-index-thumb text-primary',
-                                    'facial' => 'bi-stars text-info',
-                                    'body' => 'bi-droplet text-success',
-                                    default => 'bi-flower2 text-warning'
+                                    'massage' =>  'bi-card-image',
+                                    'facial' => 'bi-card-image',
+                                    'body' => 'bi-card-image',
+                                    default => 'bi-card-image'
                                 };
                                 ?>
                                 <div class="service-icon bg-light rounded-circle">
@@ -532,10 +532,11 @@
                                 </p>
                             </div>
                             
-                            <div class="service-action mt-auto pt-3">
+                            <div class="service-action mt-auto pt-3" >
                                 <a href="<?php echo BASE_URL; ?>/public/booking?service=<?php echo $service['service_id']; ?>" 
-                                   class="btn btn-primary w-100 rounded-pill">
-                                    <i class="bi bi-calendar-check me-2"></i>Book Now
+                                   class="btn btn-primary w-100 "style="background-color: #25bdbdcc; color: white; border-radius: 5px;">
+                                   
+                                    </i>Book Now
                                 </a>
                             </div>
                         </div>
@@ -553,10 +554,11 @@
         </div>
 
         <!-- View All Services Button -->
-        <div class="text-center mt-5" data-aos="fade-up">
+        <div class="text-center mt-5" >
             <a href="<?php echo BASE_URL; ?>/public/services" 
-               class="btn btn-outline-primary btn-lg rounded-pill px-5 hover-lift">
-                <i class="bi bi-grid me-2"></i>View All Services
+               class="btn btn-lg px-5 hover-lift"style="background-color: #25bdbdcc; color: white; border-radius: 5px;">
+               
+                View All Services
             </a>
         </div>
     </div>
@@ -632,12 +634,11 @@
 <section class="testimonials-section py-6 bg-light position-relative">
     <div class="section-overlay"></div>
     <div class="container position-relative">
-        <div class="text-center mb-5">
-            <div class="section-badge mb-3" data-aos="fade-down">
+            <div class="section-badge mb-3"style="background-color: #25bdbdcc; color: white; border-radius: 5px;" >
                 <span>TESTIMONIALS</span>
             </div>
-            <h2 class="display-5 fw-bold text-dark mb-2" data-aos="fade-up">Client Stories</h2>
-            <p class="lead text-dark-emphasis mb-5" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="display-5 fw-bold text-dark mb-2" >Client Stories</h2>
+            <p class="lead text-dark-emphasis mb-5"  data-aos-delay="100">
                 Real experiences from our valued clients
             </p>
         </div>
@@ -862,11 +863,8 @@
 
 <!-- Final CTA Section -->
 <section class="cta-section py-5 text-white text-center position-relative overflow-hidden">
-    <div class="cta-video-wrapper">
-        <video autoplay muted loop playsinline class="cta-video">
-            <source src="<?php echo BASE_URL; ?>/public/assets/videos/spa-bg.mp4" type="video/mp4">
-        </video>
-        <div class="cta-overlay"></div>
+   
+    
         <div class="floating-icons">
             <i class="bi bi-heart-pulse icon"></i>
             <i class="bi bi-stars icon"></i>
@@ -879,17 +877,14 @@
         </div>
     </div>
     <div class="container position-relative" style="z-index: 2;">
-        <div class="hero-badge mb-4" data-aos="fade-down" data-aos-duration="1000">
-            <i class="bi bi-stars me-2 star-icon"></i>
-            <span class="badge-text">Join Our Community</span>
-        </div>
-        <h2 class="display-5 fw-bold mb-4" data-aos="fade-up" data-aos-duration="1000">
-            Start Your Wellness Journey Today
+        
+        <h2 class="display-5 fw-bold mb-4"  data-aos-duration="1000">
+        Start Your Journey Today
         </h2>
-        <p class="lead mb-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-            Join our community of wellness enthusiasts and transform your life
+        <p class="lead mb-5"  data-aos-delay="100" data-aos-duration="1000">
+            Join our us and have a relaxing experience
         </p>
-        <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+        <div class="cta-buttons"  data-aos-delay="200" data-aos-duration="1000">
             <a href="<?php echo BASE_URL; ?>/public/register" 
                class="btn btn-glow btn-lg px-5 me-3">
                 <i class="bi bi-person-plus me-2"></i>Create Account
@@ -908,7 +903,7 @@
             min-height: 60vh;
             display: flex;
             align-items: center;
-            background-color: #000;
+            background-color: #00d1a4;
         }
 
         .cta-video-wrapper {

@@ -8,8 +8,8 @@
 /* Sidebar Styling */
 .sidebar {
     width: 250px;
-    background: #2e294e;
-    border-right: 1px solid #3b3355;
+    background: #047996;
+    border-right: 1px solid #0c5740;
     position: fixed;
     top: 0;
     left: 0;
@@ -24,8 +24,8 @@
 
 .sidebar .sidebar-header {
     padding: 20px;
-    background: #231f3b;
-    border-bottom: 1px solid #3b3355;
+    background: #3b6c83;
+    border-bottom: 1px solid #20a0b6;
     color: #f3f3f3;
     font-size: 1.5em;
     font-weight: bold;
@@ -44,7 +44,7 @@
     display: block;
     padding: 10px;
     font-size: 1.1em;
-    color: #c5c3e7;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 0.5rem;
     transition: all 0.3s ease;
@@ -52,8 +52,8 @@
 
 .sidebar ul li a:hover, 
 .sidebar ul li.active a {
-    color: #f3f3f3;
-    background: #6a61a1;
+    color: #ffffff;
+    background: #034a85;
 }
 
 /* Content Area */

@@ -157,16 +157,16 @@
                         <div class="service-image p-4 text-center bg-light rounded-top">
                             <?php
                             $icon = match($service['service_type']) {
-                                'massage' => 'bi-hand-index-thumb',
-                                'facial' => 'bi-stars',
-                                'body' => 'bi-heart-pulse',
+                                'massage' => 'bi-card-image',
+                                'facial' => 'bi-card-image',
+                                'body' => 'bi-card-image',
                                 default => 'bi-spa'
                             };
                             ?>
                             <i class="bi <?php echo $icon; ?> display-4 text-primary"></i>
                             <?php if ($service['is_popular']): ?>
                             <span class="position-absolute top-0 end-0 m-3">
-                                <span class="badge bg-primary">Popular</span>
+                                
                             </span>
                             <?php endif; ?>
                         </div>
@@ -207,7 +207,8 @@
 <style>
 /* Enhanced Styles */
 .services-hero {
-    background: linear-gradient(135deg, var(--bs-primary) 0%, #4a90e2 100%);
+    background: linear-gradient(150deg, var(--primary-color) 0%, #4a90e2 100%);
+    
 }
 
 .search-wrapper {
@@ -256,8 +257,8 @@
 }
 
 .custom-checkbox .form-check-input:checked {
-    background-color: var(--bs-primary);
-    border-color: var(--bs-primary);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 /* Responsive Adjustments */
@@ -304,7 +305,7 @@
     height: 20px;
     border-radius: 50%;
     border: 0 none;
-    background-color: var(--bs-primary);
+    background-color: var(--primary-color);
     cursor: pointer;
     appearance: none;
 }
@@ -330,7 +331,7 @@
     height: 5px;
     top: 50%;
     transform: translateY(-50%);
-    background: var(--bs-primary);
+    background: var(--primary-color);
     border-radius: 5px;
 }
 
@@ -338,7 +339,7 @@
     position: absolute;
     width: 20px;
     height: 20px;
-    background: var(--bs-primary);
+    background: var(--primary-color);
     border-radius: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
