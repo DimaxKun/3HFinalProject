@@ -7,6 +7,9 @@
             background-attachment: fixed; /* Keeps the image fixed while scrolling */
             backdrop-filter: blur(1px);
         }
+        .card-body.p-4{
+    border: 1px solid black;
+}
     </style>
     <!-- Page Header -->
     <div class="row mb-4">

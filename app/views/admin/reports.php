@@ -7,6 +7,21 @@
             backdrop-filter: blur(1px);
             
         }
+        #sidebar {
+    width: var(--sidebar-width);
+    background: #149add;
+    transition: all 0.3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+    border-right: 1px solid rgba(0,0,0,.05);
+}
+#sidebar .sidebar-header {
+    border-bottom: 1px solid black;
+    background-color: #00d0ff;
+}
         </style>
 <div class="container-fluid px-4">
     <h1 class="mt-4">Reports & Analytics</h1>

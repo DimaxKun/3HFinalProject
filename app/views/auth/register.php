@@ -138,7 +138,12 @@
             padding-top: 1rem;
             margin-top: -2rem;
         }
-
+        .btn-primary:hover{
+            background-color:black;
+        }
+        .text-primary{
+            color:black !important;
+        }
         .welcome-header {
             margin-bottom: 1.5rem;
         }
@@ -364,16 +369,7 @@
                                     <i class="bi bi-eye"></i>
                                 </button>
                             </div>
-                            <div class="password-requirements">
-                                <p class="mb-1">Password must contain:</p>
-                                <ul>
-                                    <li id="length">At least 8 characters</li>
-                                    <li id="uppercase">One uppercase letter</li>
-                                    <li id="lowercase">One lowercase letter</li>
-                                    <li id="number">One number</li>
-                                    <li id="special">One special character</li>
-                                </ul>
-                            </div>
+                            
                         </div>
 
                         <!-- Confirm Password -->
@@ -423,7 +419,7 @@
             <div class="welcome-panel">
                 <div class="welcome-content">
                     <div class="welcome-header">
-                        <i class="bi bi-peace display-4 mb-2"></i>
+                       
                         <h1>Haven Bliss</h1>
                         <p>"Feel Relaxation Like Never Before"</p>
                     </div>

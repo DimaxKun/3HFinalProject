@@ -13,6 +13,40 @@ extract($data);
             backdrop-filter: blur(1px);
             
         }
+        .card-body{
+    border: 1px solid black;
+}
+#sidebar {
+    width: var(--sidebar-width);
+    background: #149add;
+    transition: all 0.3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+    border-right: 1px solid rgba(0,0,0,.05);
+}
+#sidebar .sidebar-header {
+    border-bottom: 1px solid black;
+    background-color: #00d0ff;
+}
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #0dd3fd;
+    --bs-btn-border-color: #0dc6fd;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0bced7;
+    --bs-btn-hover-border-color: #0dc6fd;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0dcaf0;
+    --bs-btn-active-border-color: #0dcaf0;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
+}
         </style>
     <!-- Page Header -->
     <div class="row mb-4">
@@ -20,7 +54,7 @@ extract($data);
             <div class="d-flex justify-content-between align-items-center">
                 <h4 class="mb-0">Manage Bookings</h4>
                 <div class="d-flex gap-2">
-                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#filterModal">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#filterModal">
                         <i class="bi bi-funnel me-2"></i>Filter
                     </button>
                     <button class="btn btn-primary" onclick="exportBookings()">

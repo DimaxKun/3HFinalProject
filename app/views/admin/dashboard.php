@@ -6,8 +6,41 @@
             background-position: center;  /* Centers the image */
             background-attachment: fixed; /* Keeps the image fixed while scrolling */
             backdrop-filter: blur(1px);
-            
         }
+        .card-body{
+    border: 1px solid black;
+}
+        #sidebar {
+    width: var(--sidebar-width);
+    background: #149add;
+    transition: all 0.3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+    border-right: 1px solid rgba(0,0,0,.05);
+}
+#sidebar .sidebar-header {
+    border-bottom: 1px solid black;
+    background-color: #00d0ff;
+}
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #0dd3fd;
+    --bs-btn-border-color: #0dc6fd;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0bced7;
+    --bs-btn-hover-border-color: #0dc6fd;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0dcaf0;
+    --bs-btn-active-border-color: #0dcaf0;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
+}
 
     </style>
     <!-- Page Header -->
@@ -155,7 +188,7 @@
             <div class="card border-0 shadow-sm">
                 <div class="card-header bg-transparent border-0 d-flex justify-content-between align-items-center">
                     <h5 class="mb-0">Recent Bookings</h5>
-                    <a href="<?php echo BASE_URL; ?>/public/admin/bookings" class="btn btn-sm btn-outline-primary">
+                    <a href="<?php echo BASE_URL; ?>/public/admin/bookings" class="btn btn-sm btn-primary">
                         View All
                     </a>
                 </div>
@@ -232,10 +265,10 @@
                         <a href="<?php echo BASE_URL; ?>/public/admin/bookings/create" class="btn btn-primary">
                             <i class="bi bi-plus-circle me-2"></i>New Booking
                         </a>
-                        <a href="<?php echo BASE_URL; ?>/public/admin/services/create" class="btn btn-outline-primary">
+                        <a href="<?php echo BASE_URL; ?>/public/admin/services/create" class="btn btn-primary">
                             <i class="bi bi-grid-plus me-2"></i>Add Service
                         </a>
-                        <a href="<?php echo BASE_URL; ?>/public/admin/therapists/create" class="btn btn-outline-primary">
+                        <a href="<?php echo BASE_URL; ?>/public/admin/therapists/create" class="btn btn-primary">
                             <i class="bi bi-person-plus me-2"></i>Add Therapist
                         </a>
                     </div>
@@ -261,7 +294,7 @@
                                             <?php echo date('h:i A', strtotime($schedule['end_time'])); ?>
                                         </small>
                                     </div>
-                                    <span class="badge bg-primary rounded-pill">
+                                    <span class="badge bg-primary ">
                                         <?php echo $schedule['therapist_name']; ?>
                                     </span>
                                 </div>

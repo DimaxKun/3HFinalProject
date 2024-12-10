@@ -18,14 +18,14 @@
                     </p>
                     <div class="hero-buttons"  data-aos-delay="200" data-aos-duration="1000">
                         <a href="<?php echo BASE_URL; ?>/public/booking" 
-                           class="btn btn-primary btn-lg px-5 me-3" 
-                           style="background-color: #25bdbdcc; color: white; border-radius: 5px;">
+                           class="btn btn-glass btn-lg px-5 me-3" 
+                           style="background-color: black; color: white; border-radius: 5px;">
                             </i>Book Now
                             
                         </a>
                         <a href="<?php echo BASE_URL; ?>/public/services" 
-                           class="btn btn-primary btn-lg px-5" 
-                           style="background-color: #25bdbdcc; color: white; border-radius: 5px;">
+                           class="btn btn-glass btn-lg px-5" 
+                           style="background-color: black; color: white; border-radius: 5px;">
                             <i class="bi bi-arrow-right-circle me-2"></i>View Services
                             
                         </a>
@@ -669,7 +669,7 @@
                 position: relative;
                 overflow: hidden;
             }
-
+           
             .section-overlay {
                 position: absolute;
                 top: 0;
@@ -892,13 +892,13 @@
         </p>
         <div class="cta-buttons"  data-aos-delay="200" data-aos-duration="1000">
             <a href="<?php echo BASE_URL; ?>/public/register" 
-               class="btn btn-glow btn-lg px-5 me-3">
-                <i class="bi bi-person-plus me-2"></i>Create Account
+               class="btn btn btn-glass btn-lg px-5 me-3">
+                </i>Create Account
                 <span class="btn-blur"></span>
             </a>
             <a href="<?php echo BASE_URL; ?>/public/booking" 
                class="btn btn-glass btn-lg px-5">
-                <i class="bi bi-calendar-check me-2"></i>Book Session
+                </i>Book Session
                 <span class="btn-shine"></span>
             </a>
         </div>
@@ -926,7 +926,9 @@
             object-fit: cover;
             opacity: 0.65;
         }
-
+        .btn-glass{
+            background-color:black;
+        }
         .cta-overlay {
             position: absolute;
             top: 0;

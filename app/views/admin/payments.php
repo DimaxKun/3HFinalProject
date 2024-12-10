@@ -12,8 +12,22 @@ echo "<!-- Debug: Number of payments: " . (isset($payments) ? count($payments) :
             background-position: center;  /* Centers the image */
             background-attachment: fixed; /* Keeps the image fixed while scrolling */
             backdrop-filter: blur(1px);
-            
         }
+            #sidebar {
+    width: var(--sidebar-width);
+    background: #149add;
+    transition: all 0.3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+    border-right: 1px solid rgba(0,0,0,.05);
+}
+#sidebar .sidebar-header {
+    border-bottom: 1px solid black;
+    background-color: #00d0ff;
+}
         </style>
 <div class="container-fluid px-4 py-4">
     <div class="d-flex justify-content-between align-items-center mb-4">

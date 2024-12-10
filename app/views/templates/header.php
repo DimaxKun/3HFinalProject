@@ -43,12 +43,12 @@
             
         }
 
-        .navbar-brand:hover {
-            transform: translateY(-2px);
+
+
+
+        .btn-primary:hover{
+            background-color:black;
         }
-
-
-
 
         .nav-link {
             font-weight: 500;
@@ -68,9 +68,7 @@
             transform: translateX(-50%);
         }
 
-        .nav-link:hover::after {
-            width: 80%;
-        }
+
 
         .dropdown-menu {
             border: none;
@@ -140,7 +138,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="userDropdown" 
                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="bi bi-person-circle me-2"></i>
+                                
                                 <span><?php echo htmlspecialchars($_SESSION['full_name']); ?></span>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
@@ -155,7 +153,7 @@
                         </li>
                     <?php else: ?>
                         <li class="nav-item ms-2">
-                            <a class="btn btn-primary rounded-pill" href="<?php echo BASE_URL; ?>/public/login">
+                            <a class="btn btn-primary " href="<?php echo BASE_URL; ?>/public/login">
                                 <i class="bi bi-box-arrow-in-right me-2"></i>Login</a>
                         </li>
                     <?php endif; ?>

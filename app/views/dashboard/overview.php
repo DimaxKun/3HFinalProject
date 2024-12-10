@@ -42,6 +42,9 @@
     --bs-bg-opacity: 1;
     background-color: rgb(13 253 244) !important;
 }
+.card-body{
+    border: 1px solid black;
+}
     </style>
 <div class="container-fluid"> 
 

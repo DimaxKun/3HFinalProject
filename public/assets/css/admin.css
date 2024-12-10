@@ -13,7 +13,7 @@
 /* Sidebar */
 #sidebar {
     width: var(--sidebar-width);
-    background: #ffffff;
+    background: #14c6dd;
     transition: all 0.3s;
     position: fixed;
     top: 0;
@@ -21,6 +21,7 @@
     height: 100vh;
     z-index: 1000;
     border-right: 1px solid rgba(0,0,0,.05);
+    
 }
 
 #sidebar .sidebar-header {

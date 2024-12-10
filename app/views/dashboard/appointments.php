@@ -1,14 +1,14 @@
 <div class="container-fluid">
     <!-- Page Header -->
     <style>
-        .row {
+        #filter{
             background-image: url('https://img.freepik.com/free-vector/leaves-background-with-metallic-foil_79603-956.jpg');
             background-size: cover;       /* Scales the image to cover the entire screen */
             background-position: center;  /* Centers the image */
             background-attachment: fixed; /* Keeps the image fixed while scrolling */
             backdrop-filter: blur(1px);
         }
-        .card-body {
+        #app {
             background-image: url('https://img.freepik.com/free-vector/leaves-background-with-metallic-foil_79603-956.jpg');
             background-size: cover;       /* Scales the image to cover the entire screen */
             background-position: center;  /* Centers the image */
@@ -60,7 +60,7 @@
             <div class="d-flex justify-content-between align-items-center">
                 <div>
                     <h4 class="mb-1">My Appointments</h4>
-                    <p class="text-muted mb-0">Manage all your wellness appointments</p>
+                
                 </div>
                 <a href="<?php echo BASE_URL; ?>/public/booking" class="btn btn-primary">
                     Book New Appointment
@@ -70,7 +70,7 @@
     </div>
 
     <!-- Appointment Filters -->
-    <div class="row mb-4">
+    <div class="row mb-4" id="filter">
         <div class="col-12">
             <div class="card border-0 shadow-sm">
                 <div class="card-body">
@@ -122,7 +122,7 @@
     </div>
 
     <!-- Appointments List -->
-    <div class="row">
+    <div class="row" id="app">
         <div class="col-12">
             <?php if (empty($appointments)): ?>
                 <div class="text-center py-5">
@@ -607,7 +607,12 @@
         background-color: #e9ecef;
         border-color: #e9ecef;
     }
-
+    #app{
+    border: 1px solid black;
+}
+    #filter{
+    border: 1px solid black;
+    }
 
     .btn-primary:hover {
         background-color: #0dc6fd;

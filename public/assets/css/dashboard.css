@@ -8,7 +8,7 @@
 /* Sidebar Styling */
 .sidebar {
     width: 250px;
-    background: #047996;
+    background: #12c9aa;
     border-right: 1px solid #0c5740;
     position: fixed;
     top: 0;
@@ -24,8 +24,8 @@
 
 .sidebar .sidebar-header {
     padding: 20px;
-    background: #3b6c83;
-    border-bottom: 1px solid #20a0b6;
+    background: #25b9b2;
+    border-bottom: 1px solid #1fc5d1;
     color: #f3f3f3;
     font-size: 1.5em;
     font-weight: bold;

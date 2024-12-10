@@ -34,7 +34,7 @@ if (isset($_SESSION['error'])): ?>
     }
 .btn-primary {
     --bs-btn-color: #fff;
-    --bs-btn-bg: #0dd3fd;
+    --bs-btn-bg: #0dc6fd;
     --bs-btn-border-color: #0dc6fd;
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #0bced7;
@@ -158,7 +158,9 @@ if (isset($_SESSION['error'])): ?>
     font-size: 2rem;
     font-weight: bold;
 }
-
+.card-body{
+    border: 1px solid black;
+}
 .security-icon {
     width: 40px;
     height: 40px;
