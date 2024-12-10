@@ -51,7 +51,9 @@
     height: 100%;
 }
 
-
+:root {
+            --bs-primary-rgb: 50, 207, 207; /* Custom RGB (Tomato color) */
+        }
 
 
 .hero-content {
@@ -417,10 +419,27 @@
 </style>
 
 
-
+<style>
+        .services-section.py-5 {
+            background-image: url('https://img.freepik.com/free-vector/leaves-background-with-metallic-foil_79603-956.jpg');
+            background-size: cover;       /* Scales the image to cover the entire screen */
+            background-position: center;  /* Centers the image */
+            background-attachment: fixed; /* Keeps the image fixed while scrolling */
+            backdrop-filter: blur(1px);
+            color:black;
+        }
+        .testimonials-section.py-6{
+            background-image: url('https://img.freepik.com/free-vector/leaves-background-with-metallic-foil_79603-956.jpg');
+            background-size: cover;       /* Scales the image to cover the entire screen */
+            background-position: center;  /* Centers the image */
+            background-attachment: fixed; /* Keeps the image fixed while scrolling */
+            backdrop-filter: blur(1px);
+        }
+    </style>
 <!-- Featured Services Section -->
-<section class="services-section py-5 bg-light">
+<section class="services-section py-5 " >
     <div class="container">
+        
         <div class="section-header text-center mb-5" >
             </span>
             <h2 class="display-5 fw-bold mb-3">Services Overview</h2>
@@ -712,27 +731,24 @@
                                                         <div class="author-image">
                                                             <i class="bi bi-person-circle"></i>
                                                         </div>
-                                                        <div class="author-badge">
-                                                            <i class="bi bi-patch-check-fill text-primary"></i>
-                                                        </div>
+                                                       
                                                     </div>
-                                                    <h5 class="mb-1">Sarah Johnson</h5>
-                                                    <p class="text-muted mb-2">Regular Client</p>
+                                                    <h5 class="mb-1">Austin John</h5>
+                                                    
                                                     <div class="rating-stars">
                                                         <div class="stars-outer">
                                                             <div class="stars-inner" style="width: 100%"></div>
                                                         </div>
-                                                        <span class="rating-number">5.0</span>
+                                                        <span class="rating-number">4.5</span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-8">
                                                 <div class="testimonial-content">
-                                                    <p class="testimonial-text">"The booking process was seamless, and the massage therapy was exactly what I needed. The therapist was professional and attentive to my needs. The ambiance was perfect for relaxation. Highly recommended!"</p>
+                                                    <p class="testimonial-text">"Amazing experience! I felt so relaxed and refreshed afterward. Highly recommended!"</p>
                                                     <div class="testimonial-meta">
                                                         <span class="service-type">
-                                                            <i class="bi bi-award-fill text-primary me-2"></i>
-                                                            Swedish Massage
+                                                           
                                                         </span>
                                                         <span class="verified-badge">
                                                             <i class="bi bi-shield-check text-success me-2"></i>
@@ -760,28 +776,23 @@
                                                         <div class="author-image">
                                                             <i class="bi bi-person-circle"></i>
                                                         </div>
-                                                        <div class="author-badge">
-                                                            <i class="bi bi-patch-check-fill text-primary"></i>
-                                                        </div>
+                                                        
                                                     </div>
-                                                    <h5 class="mb-1">Michael Chen</h5>
+                                                    <h5 class="mb-1">Lewis Ranger</h5>
                                                     <p class="text-muted mb-2">VIP Member</p>
                                                     <div class="rating-stars">
                                                         <div class="stars-outer">
                                                             <div class="stars-inner" style="width: 95%"></div>
                                                         </div>
-                                                        <span class="rating-number">4.8</span>
+                                                        <span class="rating-number">4.0</span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-8">
                                                 <div class="testimonial-content">
-                                                    <p class="testimonial-text">"The aromatherapy session was incredible! The essential oils selection was perfect, and the therapist's technique was outstanding. I left feeling completely rejuvenated and stress-free."</p>
+                                                    <p class="testimonial-text">"Best massage ever! I’ll definitely be coming back."</p>
                                                     <div class="testimonial-meta">
-                                                        <span class="service-type">
-                                                            <i class="bi bi-award-fill text-primary me-2"></i>
-                                                            Aromatherapy Massage
-                                                        </span>
+                                                        
                                                         <span class="verified-badge">
                                                             <i class="bi bi-shield-check text-success me-2"></i>
                                                             Verified Client
@@ -808,12 +819,10 @@
                                                         <div class="author-image">
                                                             <i class="bi bi-person-circle"></i>
                                                         </div>
-                                                        <div class="author-badge">
-                                                            <i class="bi bi-patch-check-fill text-primary"></i>
-                                                        </div>
+                                                       
                                                     </div>
-                                                    <h5 class="mb-1">Emma Rodriguez</h5>
-                                                    <p class="text-muted mb-2">Monthly Member</p>
+                                                    <h5 class="mb-1">Nani Niwala</h5>
+                                                    
                                                     <div class="rating-stars">
                                                         <div class="stars-outer">
                                                             <div class="stars-inner" style="width: 90%"></div>
@@ -824,12 +833,9 @@
                                             </div>
                                             <div class="col-md-8">
                                                 <div class="testimonial-content">
-                                                    <p class="testimonial-text">"The hot stone therapy was a game-changer for my chronic back pain. The combination of heated stones and expert massage techniques provided long-lasting relief. The staff is incredibly knowledgeable and caring."</p>
+                                                    <p class="testimonial-text">"Perfect pressure and very relaxing environment."</p>
                                                     <div class="testimonial-meta">
-                                                        <span class="service-type">
-                                                            <i class="bi bi-award-fill text-primary me-2"></i>
-                                                            Hot Stone Therapy
-                                                        </span>
+                                                       
                                                         <span class="verified-badge">
                                                             <i class="bi bi-shield-check text-success me-2"></i>
                                                             Verified Client
@@ -846,11 +852,11 @@
                                 data-bs-target="#testimonialCarousel" data-bs-slide="next">
                             <i class="bi bi-arrow-right"></i>
                         </button>
-                        <div class="carousel-indicators testimonial-indicators">
+                        <div class="carousel-indicators testimonial-indicators" >
                             <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" 
                                     class="active bg-primary" aria-current="true"></button>
                             <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" 
-                                    class="bg-primary"></button>
+                                    class="bg-primary" ></button>
                             <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" 
                                     class="bg-primary"></button>
                         </div>

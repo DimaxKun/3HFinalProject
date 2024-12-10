@@ -86,8 +86,8 @@
 
     <style>
         .footer {
-            background: linear-gradient(135deg, #2b2d42 0%, #1a1b2e 100%);
-            color: #fff;
+            background-color:black;
+            color: white;
             position: relative;
             overflow: hidden;
             padding-top: 5rem;

@@ -11,10 +11,11 @@
     <!-- Custom CSS -->
     <link href="<?php echo BASE_URL; ?>/public/assets/css/admin.css" rel="stylesheet">
 </head>
-<body style="background-color: #AFFFEA">
-    <div class="wrapper">
+
+<body >
+    <div class="wrapper" >
         <!-- Sidebar -->
-        <nav id="sidebar" class="shadow-sm">
+        <nav id="sidebar" class="shadow-sm" >
             <div class="sidebar-header p-4">
                 <div class="d-flex align-items-center">
                     
@@ -25,7 +26,7 @@
             <ul class="list-unstyled components p-3">
                 <li class="mb-2 <?php echo $active_page === 'dashboard' ? 'active' : ''; ?>">
                     <a href="<?php echo BASE_URL; ?>/public/admin" class="d-flex align-items-center p-3 rounded">
-                        <!--<i class="bi bi-speedometer2 me-3"></i> Dashboard -->
+                        
                     </a>
                 </li>
                 <li class="<?php echo $active_page === 'bookings' ? 'active' : ''; ?>">

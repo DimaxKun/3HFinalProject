@@ -5,7 +5,16 @@ echo "<!-- Debug: Payments variable exists: " . (isset($payments) ? 'Yes' : 'No'
 echo "<!-- Debug: Payments is array: " . (is_array($payments) ? 'Yes' : 'No') . " -->\n";
 echo "<!-- Debug: Number of payments: " . (isset($payments) ? count($payments) : 'N/A') . " -->\n";
 ?>
-
+<style>
+        body {
+            background-image: url('https://img.freepik.com/free-vector/leaves-background-with-metallic-foil_79603-956.jpg');
+            background-size: cover;       /* Scales the image to cover the entire screen */
+            background-position: center;  /* Centers the image */
+            background-attachment: fixed; /* Keeps the image fixed while scrolling */
+            backdrop-filter: blur(1px);
+            
+        }
+        </style>
 <div class="container-fluid px-4 py-4">
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h2 class="mb-0">Payment Transactions</h2>

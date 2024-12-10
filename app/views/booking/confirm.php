@@ -1,5 +1,35 @@
 <?php include '../app/views/templates/header.php'; ?>
+<style>
+    .btn-primary{
+    background-color:#32CFCF;
+}
+.btn-primary:hover{
+    background-color:black;
+}
+.progress-bar{
+    background-color:#03d5df;
+}
+.btn-outline-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #32CFCF;
+    --bs-btn-border-color: #51cbef;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0e93b1;
+    --bs-btn-hover-border-color: rgb(255 255 255);
+    --bs-btn-focus-shadow-rgb: 130, 138, 145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: white;
+    --bs-btn-active-border-color: #32cfcf;
+}
+.text-primary{
+    color:#03d5df !important;
+}
+.form-check-input:checked {
+    background-color: #0dc6fd;
+    border-color: #0dd8fd;
+}
 
+</style>
 <div class="container py-5 mt-5">
     <div class="row">
         <div class="col-12">

@@ -144,13 +144,13 @@
         }
 
         .welcome-header h1 {
-            font-size: 2.5rem;
+            font-size: 4.5rem;
             font-weight: 700;
             margin-bottom: 0.75rem;
         }
 
         .welcome-header p {
-            font-size: 1.1rem;
+            font-size: 2.1rem;
             opacity: 0.9;
         }
 
@@ -268,11 +268,20 @@
             <div class="register-panel">
                 <div class="login-brand">
                     <a href="<?php echo BASE_URL; ?>/public">
-                        <i class="bi bi-heart-pulse-fill me-2"></i>
-                        SereneBook™
+                       
                     </a>
                 </div>
-
+                <style>
+        .welcome-panel{
+            background-image: url('https://img.freepik.com/free-vector/leaves-background-with-metallic-foil_79603-956.jpg');
+            background-size: cover;       /* Scales the image to cover the entire screen */
+            background-position: center;  /* Centers the image */
+            background-attachment: fixed; /* Keeps the image fixed while scrolling */
+            backdrop-filter: blur(1px);
+            color:black;
+            
+        }
+        </style>
                 <div class="login-form-container">
                     <div class="form-header">
                         <h2>Create Account</h2>
@@ -415,32 +424,10 @@
                 <div class="welcome-content">
                     <div class="welcome-header">
                         <i class="bi bi-peace display-4 mb-2"></i>
-                        <h1>Your Path to Wellness</h1>
-                        <p>Experience tranquility and rejuvenation with our premium wellness services</p>
+                        <h1>Haven Bliss</h1>
+                        <p>"Feel Relaxation Like Never Before"</p>
                     </div>
 
-                    <div class="features-grid">
-                        <div class="feature-item">
-                            <i class="bi bi-calendar-check feature-icon"></i>
-                            <h5>Easy Booking</h5>
-                            <p>Schedule appointments in minutes</p>
-                        </div>
-                        <div class="feature-item">
-                            <i class="bi bi-award feature-icon"></i>
-                            <h5>Expert Therapists</h5>
-                            <p>Certified wellness experts</p>
-                        </div>
-                        <div class="feature-item">
-                            <i class="bi bi-heart feature-icon"></i>
-                            <h5>Premium Service</h5>
-                            <p>Tailored wellness treatments</p>
-                        </div>
-                        <div class="feature-item">
-                            <i class="bi bi-shield-check feature-icon"></i>
-                            <h5>Safe & Secure</h5>
-                            <p>Your privacy is our priority</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

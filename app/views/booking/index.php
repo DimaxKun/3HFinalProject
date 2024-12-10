@@ -1,39 +1,26 @@
 <?php include '../app/views/templates/header.php'; ?>
 
-<div class="container py-5 mt-5">
+<div class="container py-5 mt-5" >
     <div class="row">
         <div class="col-12">
-            <h2 class="mb-4">Book an Appointment</h2>
+            <h2 class="mb-4"style="color:black">Book an Appointment</h2>
             
             <!-- Progress Steps -->
-            <div class="booking-progress mb-5">
-                <div class="progress" style="height: 4px;">
-                    <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <div class="d-flex justify-content-between mt-3">
-                    <div class="step active">
-                        <div class="step-icon">
-                            <i class="bi bi-1-circle-fill"></i>
-                        </div>
-                        <span class="step-label">Select Service</span>
-                    </div>
-                    <div class="step">
-                        <div class="step-icon">
-                            <i class="bi bi-2-circle"></i>
-                        </div>
-                        <span class="step-label">Choose Date & Time</span>
-                    </div>
-                    <div class="step">
-                        <div class="step-icon">
-                            <i class="bi bi-3-circle"></i>
-                        </div>
-                        <span class="step-label">Confirm Booking</span>
-                    </div>
-                </div>
-            </div>
-
+            
+            <style>
+        body {
+            background-image: url('https://img.freepik.com/free-vector/leaves-background-with-metallic-foil_79603-956.jpg');
+            background-size: cover;       /* Scales the image to cover the entire screen */
+            background-position: center;  /* Centers the image */
+            background-attachment: fixed; /* Keeps the image fixed while scrolling */
+            backdrop-filter: blur(2px);
+        }
+        :root {
+            --bs-primary-rgb: 50, 207, 207;
+        }
+    </style>
             <!-- Service Selection -->
-            <div class="row g-4">
+            <div class="row g-4" >
                 <?php foreach ($services as $service): ?>
                 <div class="col-md-6 col-lg-4">
                     <div class="card service-card h-100 <?php echo ($selectedService && $selectedService['service_id'] == $service['service_id']) ? 'selected' : ''; ?>"
@@ -53,7 +40,7 @@
                             </span>
                             <?php endif; ?>
                         </div>
-                        <div class="card-body p-4"style ="background-color:#00d1a4">
+                        <div class="card-body p-4">
                             <div class="d-flex justify-content-between align-items-start mb-3">
                                 <h5 class="card-title mb-0">
                                     <?php echo htmlspecialchars($service['service_name']); ?>
@@ -78,7 +65,7 @@
                                 <?php echo htmlspecialchars($service['description']); ?>
                             </p>
                         </div>
-                        <div style ="background-color:#00d1a4";class="card-footer bg-transparent border-0 p-4 pt-0" >
+                        <div class="card-footer bg-transparent border-0 p-4 pt-0" >
                             <button  class="btn <?php echo ($selectedService && $selectedService['service_id'] == $service['service_id']) ? 'btn-primary' : 'btn-outline-primary'; ?> w-100 select-service"
                                     data-service-id="<?php echo $service['service_id']; ?>">
                                 <?php if ($selectedService && $selectedService['service_id'] == $service['service_id']): ?>
@@ -241,11 +228,29 @@ document.addEventListener('DOMContentLoaded', function() {
     padding: 0.75rem 1.5rem;
     font-weight: 500;
 }
+.btn-primary{
+    background-color: #32CFCF;
+}
+.btn-primary:hover{
+    background-color:black;
+}
 
 #nextStep:disabled {
     cursor: not-allowed;
     opacity: 0.65;
 }
+.btn-outline-primary {
+            --bs-btn-color: #fff;
+            --bs-btn-bg: #32CFCF;
+            --bs-btn-border-color: #51cbef;
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: #0e93b1;
+            --bs-btn-hover-border-color: rgb(255 255 255);
+            --bs-btn-focus-shadow-rgb: 130, 138, 145;
+            --bs-btn-active-color: #fff;
+            --bs-btn-active-bg: white;
+            --bs-btn-active-border-color: #32cfcf;
+                }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {

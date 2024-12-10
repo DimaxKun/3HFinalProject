@@ -24,8 +24,33 @@
         </div>
     </div>
 </div>
+<style>
+        body {
+            background-image: url('https://img.freepik.com/free-vector/leaves-background-with-metallic-foil_79603-956.jpg');
+            background-size: cover;       /* Scales the image to cover the entire screen */
+            background-position: center;  /* Centers the image */
+            background-attachment: fixed; /* Keeps the image fixed while scrolling */
+            backdrop-filter: blur(1px);
+            
+        }
+        :root {
+            --bs-primary-rgb: 50, 207, 207;
 
-<div class="container py-4">
+        }
+        .btn-secondary {
+            --bs-btn-color: #fff;
+            --bs-btn-bg: #32CFCF;
+            --bs-btn-border-color: #51cbef;
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: #0e93b1;
+            --bs-btn-hover-border-color: rgb(255 255 255);
+            --bs-btn-focus-shadow-rgb: 130, 138, 145;
+            --bs-btn-active-color: #fff;
+            --bs-btn-active-bg: white;
+            --bs-btn-active-border-color: #32cfcf;
+                }
+    </style>
+<div class="container py-4" >
     <div class="row g-4">
         <!-- Filters Sidebar -->
         <div class="col-lg-3 mb-4">
@@ -33,7 +58,7 @@
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center mb-4">
                         <h5 class="card-title mb-0">Filters</h5>
-                        <button class="btn btn-link text-decoration-none p-0" id="clearFilters">
+                        <button class="btn btn-link text-decoration-none p-0" id="clearFilters" style="color:black">
                             Clear All
                         </button>
                     </div>
@@ -94,7 +119,7 @@
                             </div>
                             <div class="d-flex justify-content-between text-muted small">
                                 <span>₱0</span>
-                                <span>₱5000</span>
+                                <span>₱3000</span>
                             </div>
                         </div>
 
@@ -106,8 +131,8 @@
                                 $durations = [
                                     '30' => '30 minutes',
                                     '60' => '60 minutes',
-                                    '90' => '90 minutes',
-                                    '120' => '120 minutes'
+                                    '90' => '90 minutes'
+                                    
                                 ];
                                 foreach ($durations as $value => $label):
                                 ?>
@@ -123,7 +148,7 @@
                             </div>
                         </div>
 
-                        <button type="submit" class="btn btn-primary w-100">
+                        <button type="submit" class="btn btn-secondary w-100">
                             Apply Filters
                         </button>
                     </form>
@@ -134,12 +159,12 @@
         <!-- Services List -->
         <div class="col-lg-9">
             <!-- Sort Options -->
-            <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="d-flex justify-content-between align-items-center mb-4"style="color: white">
                 <div class="results-count">
                     <h5 class="mb-0"><?php echo count($services); ?> services available</h5>
                 </div>
                 <div class="d-flex align-items-center gap-2">
-                    <label class="text-muted mb-0">Sort by:</label>
+                    <label style="color:black">Sort by:</label>
                     <select class="form-select form-select-sm" style="width: auto;" id="sortSelect">
                         <option value="popular">Most Popular</option>
                         <option value="price_asc">Price: Low to High</option>
@@ -192,7 +217,7 @@
                         </div>
                         <div class="card-footer bg-transparent border-0 p-4 pt-0">
                             <a href="<?php echo BASE_URL; ?>/public/booking?service=<?php echo $service['service_id']; ?>" 
-                               class="btn btn-primary w-100 rounded-pill">
+                               class="btn btn-secondary w-100 ">
                                 <i class="bi bi-calendar-check me-2"></i>Book Now
                             </a>
                         </div>

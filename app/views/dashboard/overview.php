@@ -1,9 +1,51 @@
-<div class="container-fluid"> 
 <style>
         .card-body.p-4 {
-            background-color: #AEEEEE;
+            background-image: url('https://img.freepik.com/free-vector/leaves-background-with-metallic-foil_79603-956.jpg');
+            background-size: cover;       /* Scales the image to cover the entire screen */
+            background-position: center;  /* Centers the image */
+            background-attachment: fixed; /* Keeps the image fixed while scrolling */
+            backdrop-filter: blur(1px);
         }
+        .btn-outline-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #32CFCF;
+    --bs-btn-border-color: #51cbef;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0e93b1;
+    --bs-btn-hover-border-color: rgb(255 255 255);
+    --bs-btn-focus-shadow-rgb: 130, 138, 145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: white;
+    --bs-btn-active-border-color: #32cfcf;
+}
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #0dd3fd;
+    --bs-btn-border-color: #0dc6fd;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0bced7;
+    --bs-btn-hover-border-color: #0dc6fd;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0dcaf0;
+    --bs-btn-active-border-color: #0dcaf0;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
+}
+.text-primary {
+    --bs-text-opacity: 1;
+    color: rgb(75 75 75) !important;
+}
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgb(13 253 244) !important;
+}
     </style>
+<div class="container-fluid"> 
+
+    
     <!-- Welcome Section -->
     <div class="row mb-4"  >
         <div class="col-12">
@@ -24,9 +66,7 @@
             <div class="card border-0 shadow-sm">
                 <div class="card-body p-4">
                     <div class="d-flex align-items-center mb-3">
-                        <div class="stats-icon bg-primary bg-opacity-10 text-primary rounded p-3 me-3">
-                            <i class="bi bi-calendar-check"></i>
-                        </div>
+                        
                         <h6 class="card-subtitle text-muted mb-0">Upcoming Appointments</h6>
                     </div>
                     <h3 class="card-title mb-0"><?php echo $upcoming_count; ?></h3>
@@ -37,9 +77,7 @@
             <div class="card border-0 shadow-sm">
                 <div class="card-body p-4">
                     <div class="d-flex align-items-center mb-3">
-                        <div class="stats-icon bg-success bg-opacity-10 text-success rounded p-3 me-3">
-                            <i class="bi bi-check-circle"></i>
-                        </div>
+                        
                         <h6 class="card-subtitle text-muted mb-0">Completed Sessions</h6>
                     </div>
                     <h3 class="card-title mb-0"><?php echo $completed_count; ?></h3>
@@ -50,9 +88,7 @@
             <div class="card border-0 shadow-sm">
                 <div class="card-body p-4">
                     <div class="d-flex align-items-center mb-3">
-                        <div class="stats-icon bg-warning bg-opacity-10 text-warning rounded p-3 me-3">
-                            <i class="bi bi-star"></i>
-                        </div>
+                        
                         <h6 class="card-subtitle text-muted mb-0">Reviews Given</h6>
                     </div>
                     <h3 class="card-title mb-0"><?php echo $reviews_count; ?></h3>
@@ -76,9 +112,7 @@
                     <?php foreach ($upcoming_appointments as $appointment): ?>
                         <div class="appointment-item mb-3 pb-3 border-bottom">
                             <div class="d-flex align-items-center">
-                                <div class="appointment-icon bg-primary bg-opacity-10 p-3 rounded-circle me-4">
-                                    <i class="bi bi-calendar-event text-primary"></i>
-                                </div>
+                                
                                 <div class="flex-grow-1">
                                     <h6 class="mb-1"><?php echo htmlspecialchars($appointment['service_name']); ?></h6>
                                     <p class="text-muted mb-0">
@@ -122,9 +156,7 @@
                 <div class="card-body p-4">
                     <div class="d-flex justify-content-between align-items-center mb-4">
                         <h5 class="card-title mb-0">Current Promotions & Rewards</h5>
-                        <?php if (!empty($promotions)): ?>
-                            <span class="badge bg-primary"><?php echo count($promotions); ?> Active</span>
-                        <?php endif; ?>
+                        
                     </div>
 
                     <?php if (empty($promotions)): ?>

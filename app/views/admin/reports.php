@@ -1,3 +1,13 @@
+<style>
+        body {
+            background-image: url('https://img.freepik.com/free-vector/leaves-background-with-metallic-foil_79603-956.jpg');
+            background-size: cover;       /* Scales the image to cover the entire screen */
+            background-position: center;  /* Centers the image */
+            background-attachment: fixed; /* Keeps the image fixed while scrolling */
+            backdrop-filter: blur(1px);
+            
+        }
+        </style>
 <div class="container-fluid px-4">
     <h1 class="mt-4">Reports & Analytics</h1>
     <ol class="breadcrumb mb-4">

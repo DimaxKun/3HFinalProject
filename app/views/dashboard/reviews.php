@@ -1,4 +1,13 @@
-<div class="container-fluid"style="background-color:#AFFFEA">
+<div class="container-fluid">
+<style>
+        .row {
+            background-image: url('https://img.freepik.com/free-vector/leaves-background-with-metallic-foil_79603-956.jpg');
+            background-size: cover;       /* Scales the image to cover the entire screen */
+            background-position: center;  /* Centers the image */
+            background-attachment: fixed; /* Keeps the image fixed while scrolling */
+            backdrop-filter: blur(1px);
+        }
+    </style>
     <!-- Page Header -->
     <div class="row mb-4">
         <div class="col-12">

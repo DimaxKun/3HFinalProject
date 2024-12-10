@@ -1,5 +1,60 @@
-<div class="container-fluid"style="background-color:#AFFFEA">
+<div class="container-fluid">
     <!-- Page Header -->
+    <style>
+        .row {
+            background-image: url('https://img.freepik.com/free-vector/leaves-background-with-metallic-foil_79603-956.jpg');
+            background-size: cover;       /* Scales the image to cover the entire screen */
+            background-position: center;  /* Centers the image */
+            background-attachment: fixed; /* Keeps the image fixed while scrolling */
+            backdrop-filter: blur(1px);
+        }
+        .card-body {
+            background-image: url('https://img.freepik.com/free-vector/leaves-background-with-metallic-foil_79603-956.jpg');
+            background-size: cover;       /* Scales the image to cover the entire screen */
+            background-position: center;  /* Centers the image */
+            background-attachment: fixed; /* Keeps the image fixed while scrolling */
+            backdrop-filter: blur(1px);
+        }
+        .btn-outline-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #32CFCF;
+    --bs-btn-border-color: #51cbef;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0e93b1;
+    --bs-btn-hover-border-color: rgb(255 255 255);
+    --bs-btn-focus-shadow-rgb: 130, 138, 145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: white;
+    --bs-btn-active-border-color: #32cfcf;
+}
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #0dd3fd;
+    --bs-btn-border-color: #0dc6fd;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0bced7;
+    --bs-btn-hover-border-color: #0dc6fd;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0dcaf0;
+    --bs-btn-active-border-color: #0dcaf0;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
+    background-color: #32cfcf;
+    border-color: #32cfcf;
+}
+.text-primary {
+    --bs-text-opacity: 1;
+    color: rgb(75 75 75) !important;
+}
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgb(13 253 244) !important;
+}
+    </style>
+
     <div class="row mb-4">
         <div class="col-12">
             <div class="d-flex justify-content-between align-items-center">
@@ -553,14 +608,10 @@
         border-color: #e9ecef;
     }
 
-    .btn-primary {
-        background-color: #0d6efd;
-        border-color: #0d6efd;
-    }
 
     .btn-primary:hover {
-        background-color: #0b5ed7;
-        border-color: #0a58ca;
+        background-color: #0dc6fd;
+        border-color: #0dc6fd;
     }
 
     .badge {

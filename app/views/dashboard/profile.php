@@ -21,9 +21,34 @@ if (isset($_SESSION['error'])): ?>
     </div>
 <?php endif; ?>
 <style>
-        .card-body.p-4 {
-            background-color: #AEEEEE;
+        .card-body {
+            background-image: url('https://img.freepik.com/free-vector/leaves-background-with-metallic-foil_79603-956.jpg');
+            background-size: cover;       /* Scales the image to cover the entire screen */
+            background-position: center;  /* Centers the image */
+            background-attachment: fixed; /* Keeps the image fixed while scrolling */
+            backdrop-filter: blur(1px);
         }
+        .btn-primary:hover {
+        background-color: #0dc6fd;
+        border-color: #0dc6fd;
+    }
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #0dd3fd;
+    --bs-btn-border-color: #0dc6fd;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0bced7;
+    --bs-btn-hover-border-color: #0dc6fd;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0dcaf0;
+    --bs-btn-active-border-color: #0dcaf0;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
+}
+    
     </style>
 <div class="container-fluid">
     <div class="row">
@@ -95,19 +120,7 @@ if (isset($_SESSION['error'])): ?>
                                         <i class="bi bi-eye"></i>
                                     </button>
                                 </div>
-                                <!-- Password Strength Meter -->
-                                <div class="mt-2">
-                                    <div class="progress" style="height: 5px;">
-                                        <div id="password-strength-meter" class="progress-bar" role="progressbar" style="width: 0%"></div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-1">
-                                        <small class="text-muted">Password Strength:</small>
-                                        <small id="password-strength-text" class="text-muted">Not set</small>
-                                    </div>
-                                </div>
-                                <ul id="password-feedback" class="small text-muted mt-2"></ul>
-                            </div>
-                            <div class="col-md-6">
+                                
                                 <label class="form-label">Confirm New Password</label>
                                 <div class="input-group">
                                     <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
@@ -119,7 +132,7 @@ if (isset($_SESSION['error'])): ?>
                             </div>
                         </div>
                         <div class="mt-4">
-                            <button type="submit" class="btn btn-warning" disabled style="background-color:blue; color:white">
+                            <button type="submit" class="btn btn-primary" disabled >
                                 </i>Update Password
                             </button>
                         </div>
@@ -128,37 +141,7 @@ if (isset($_SESSION['error'])): ?>
             </div>
         </div>
 
-        <!-- Right Column: Account Summary -->
-        <div class="col-lg-4">
-            <div class="card border-0 shadow-sm mb-4">
-                <div class="card-body p-4">
-                    <h5 class="card-title mb-4">Account Summary</h5>
-                    <div class="text-center mb-4">
-                        <div class="avatar-placeholder bg-primary bg-opacity-10 text-primary rounded-circle mx-auto mb-3">
-                            <?php echo strtoupper(substr($user['full_name'], 0, 1)); ?>
-                        </div>
-                        <h6 class="mb-1"><?php echo htmlspecialchars($user['full_name']); ?></h6>
-                        <p class="text-muted mb-0">Member since <?php echo date('F Y', strtotime($user['created_at'])); ?></p>
-                    </div>
-                    <hr>
-                    <div class="account-stats">
-                        <div class="row g-0">
-                            <div class="col-6 border-end">
-                                <div class="p-3 text-center">
-                                    <div class="display-6 mb-1"><?php echo $total_appointments; ?></div>
-                                    <p class="text-muted mb-0">Appointments</p>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="p-3 text-center">
-                                    <div class="display-6 mb-1"><?php echo $total_reviews; ?></div>
-                                    <p class="text-muted mb-0">Reviews</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        
 
             
         </div>

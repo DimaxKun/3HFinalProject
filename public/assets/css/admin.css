@@ -30,7 +30,7 @@
 #sidebar ul li a {
     padding: 10px;
     display: block;
-    color: #666;
+    color: #000000;
     text-decoration: none;
     transition: all 0.3s;
 }
@@ -38,7 +38,7 @@
 #sidebar ul li.active a,
 #sidebar ul li a:hover {
     background: #f8f9fa;
-    color: #0dfdd5;
+    color: #000000;
 }
 
 /* Content */
@@ -108,10 +108,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #000000;
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #000000;
 } 

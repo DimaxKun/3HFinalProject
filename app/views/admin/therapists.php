@@ -1,3 +1,16 @@
+<style>
+        .row {
+            background-image: url('https://img.freepik.com/free-vector/leaves-background-with-metallic-foil_79603-956.jpg');
+            background-size: cover;       /* Scales the image to cover the entire screen */
+            background-position: center;  /* Centers the image */
+            background-attachment: fixed; /* Keeps the image fixed while scrolling */
+            backdrop-filter: blur(1px);
+            
+        }
+        #currentWeek{
+            color:black;
+        }
+        </style>
 <div class="container-fluid">
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h1 class="h3">Therapist Schedule Management</h1>
@@ -26,7 +39,7 @@
                                 <button type="button" class="btn btn-outline-secondary" id="prevWeek">
                                     <i class="bi bi-chevron-left"></i>
                                 </button>
-                                <button type="button" class="btn btn-outline-secondary" id="currentWeek">
+                                <button type="button" class="btn btn-outline-secondary" id="currentWeek" >
                                     This Week
                                 </button>
                                 <button type="button" class="btn btn-outline-secondary" id="nextWeek">
