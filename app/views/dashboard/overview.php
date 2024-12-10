@@ -45,6 +45,9 @@
 .card-body{
     border: 1px solid black;
 }
+.sidebar{
+    background: linear-gradient(to right, #4682B4,#7FFFD4);
+}
     </style>
 <div class="container-fluid"> 
 

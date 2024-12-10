@@ -13,9 +13,10 @@ echo "<!-- Debug: Number of payments: " . (isset($payments) ? count($payments) :
             background-attachment: fixed; /* Keeps the image fixed while scrolling */
             backdrop-filter: blur(1px);
         }
-            #sidebar {
+
+        #sidebar {
     width: var(--sidebar-width);
-    background: #149add;
+    background: linear-gradient(to right,#7FFFD4,#4682B4);
     transition: all 0.3s;
     position: fixed;
     top: 0;
@@ -26,7 +27,7 @@ echo "<!-- Debug: Number of payments: " . (isset($payments) ? count($payments) :
 }
 #sidebar .sidebar-header {
     border-bottom: 1px solid black;
-    background-color: #00d0ff;
+    background-color: #00ffd0;
 }
         </style>
 <div class="container-fluid px-4 py-4">

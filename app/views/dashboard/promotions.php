@@ -10,6 +10,9 @@
         .card-body.p-4{
     border: 1px solid black;
 }
+.sidebar{
+    background: linear-gradient(to right, #4682B4,#7FFFD4);
+}
     </style>
     <!-- Page Header -->
     <div class="row mb-4">

@@ -158,6 +158,9 @@ if (isset($_SESSION['error'])): ?>
     font-size: 2rem;
     font-weight: bold;
 }
+.sidebar{
+    background: linear-gradient(to right, #4682B4,#7FFFD4);
+}
 .card-body{
     border: 1px solid black;
 }

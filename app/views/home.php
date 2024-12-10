@@ -39,7 +39,7 @@
 <style>
 .hero-section {
     position: relative;
-    background-color: #90ee90;  /* Light, soothing background */
+    background: linear-gradient(150deg, var(--primary-color) 0%, #4a90e2 100%);
     height: 100vh;
 }
 
@@ -909,7 +909,7 @@
             min-height: 60vh;
             display: flex;
             align-items: center;
-            background-color: #00d1a4;
+            background: radial-gradient(circle, #32CFCF, #FF5733);
         }
 
         .cta-video-wrapper {

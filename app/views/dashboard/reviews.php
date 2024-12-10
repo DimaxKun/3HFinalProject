@@ -7,6 +7,9 @@
             background-attachment: fixed; /* Keeps the image fixed while scrolling */
             backdrop-filter: blur(1px);
         }
+        .sidebar{
+    background: linear-gradient(to right, #4682B4,#7FFFD4);
+}
         #review{
     border: 1px solid black;
 }

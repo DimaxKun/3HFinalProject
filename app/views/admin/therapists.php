@@ -26,9 +26,10 @@
     --bs-btn-disabled-bg: #0d6efd;
     --bs-btn-disabled-border-color: #0d6efd;
 }
-#sidebar {
+
+        #sidebar {
     width: var(--sidebar-width);
-    background: #149add;
+    background: linear-gradient(to right,#7FFFD4,#4682B4);
     transition: all 0.3s;
     position: fixed;
     top: 0;
@@ -39,7 +40,7 @@
 }
 #sidebar .sidebar-header {
     border-bottom: 1px solid black;
-    background-color: #00d0ff;
+    background-color: #00ffd0;
 }
 .btn-outline-secondary {
     --bs-btn-color: #2e8583;
